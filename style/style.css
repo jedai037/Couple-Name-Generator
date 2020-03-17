@@ -181,7 +181,7 @@ body {
   }
   .main-col__bordered {
     padding-left: 0;
-    border-left: 1px solid #E8EBF4;
+    border: none;
   }
   .main-block {
     flex-direction: column;

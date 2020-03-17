@@ -36,16 +36,13 @@
             </div>
             <div class="wrapper wrapper__disable">
                 <div class="main-block main-block--active">
-                    <div class="main-col">
-                        <h2 class="main-head">First name</h2>
-                        <div class="main-input">lark, lerk, levk, levrk, lmark, lemark, levark</div>
+                    <div class="main-active-col">
+                        <h2 class="main-active-head">First name</h2>
+                        <p class="main-active-input">lark, lerk, levk, levrk, lmark, lemark, levark</p>
                     </div>
-                    <div class="main-col__bordered">
-                        <h2 class="main-head">Second name</h2>
-                        <div class="main-input">marv, mlev, malev, marev, markv, markev, marlev</div>
-                    </div>
-                    <div class="main-col__btn">
-                        <button class="main-button">Generate</button>
+                    <div class="main-active-col">
+                        <h2 class="main-active-head">Second name</h2>
+                        <div class="main-active-input">marv, mlev, malev, marev, markv, markev, marlev</div>
                     </div>
                 </div>
             </div>
@@ -80,15 +77,11 @@
     <script>
         const btn = document.querySelector('.main-button');
         const wrapper = document.querySelectorAll('.wrapper');
-    
+        
         btn.addEventListener('click', (evt) => {
-          evt.preventDefault();
-          wrapper.forEach(element => {
-            element.classList.toggle('wrapper__disable');
-          });
+        evt.preventDefault();
+        wrapper[1].classList.toggle('wrapper__disable');
         });
-    
-    
-      </script>
+    </script>
 </body>
 </html>

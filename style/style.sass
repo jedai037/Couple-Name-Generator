@@ -8,7 +8,7 @@ body
     background: url('../img/bg.jpg')
     background-position: 0px 0px
     background-repeat: no-repeat
-    background-size: cover
+    background-size: 100%
 
 $blue: #112985
 $grey: #8793c1
@@ -16,7 +16,7 @@ $grey: #8793c1
 .container
     max-width: 1255.52px
 .header
-    margin-top: 10%
+    margin-top: 6%
     text-align: center
     &-title
         font-family: Chivo
@@ -40,9 +40,30 @@ $grey: #8793c1
         border-left: 5px solid #3454D1
         box-shadow: 0px 59.5972px 63.5704px rgba(52, 84, 209, 0.08)
         &--active
-            margin-top: 200px
+            display: flex
+            margin-top: 0
+            justify-content: start
+    &-active
+        &-col
+            max-width: 33%
+            margin-left: 4%
+            margin-right: 30px
+        &-head
+            font-size: 20px
+            line-height: 34px
+            color: $blue
+            text-transform: uppercase
+        &-input 
+            margin-left: 0
+            margin-top: 8px
+            color: $grey
+            border: none
+            max-width: 200px
+
     &-col
-        flex-basis: 25%
+        max-width: 33%
+        &:last-child
+            width: 20%
         &__bordered
             padding-left: 2%
             border-left: 1px solid #E8EBF4
@@ -51,6 +72,7 @@ $grey: #8793c1
             width: 40%
             justify-content: flex-end
     &-input
+        margin-left: 0
         margin-top: 8px
         color: $grey
         border: none
@@ -74,7 +96,7 @@ $grey: #8793c1
         display: none
 
 .footer 
-    margin-top: 25%
+    margin-top: 5%
     background-color: #fff
     display: flex
     min-height: 165px
@@ -108,3 +130,17 @@ $grey: #8793c1
         flex-direction: row
         width: 154.09px    
 
+
+
+@media (max-width: 740px)
+    .footer
+        &-container
+            display: flex
+            flex-direction: column
+        &-col
+            width: 60%
+            text-align: center
+        &-img
+            position: static
+        &-social
+            display: inline-block

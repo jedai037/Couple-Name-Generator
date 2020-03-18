@@ -237,3 +237,9 @@ body {
     display: inline-block;
   }
 }
+
+@media (min-width: 1400px) {
+  .footer {
+    margin-top: 10%;
+  }
+}

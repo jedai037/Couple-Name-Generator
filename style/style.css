@@ -1,5 +1,8 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: Montserrat;
   margin: 0 auto;
   outline: 0;
@@ -16,21 +19,32 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 header {
-  flex: 0 0 auto;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
 }
 
 main {
   width: 100%;
-  flex: 1 0 auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 
 footer {
-  flex: 0 0 auto;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
 }
 
 .container {
@@ -59,25 +73,40 @@ footer {
 .main-block {
   margin-top: 75px;
   min-height: 123.65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 80%;
   background-color: #fff;
   border-left: 5px solid #3454D1;
-  box-shadow: 0px 59.5972px 63.5704px rgba(52, 84, 209, 0.08);
+  -webkit-box-shadow: 0px 59.5972px 63.5704px rgba(52, 84, 209, 0.08);
+          box-shadow: 0px 59.5972px 63.5704px rgba(52, 84, 209, 0.08);
 }
 
 .main-block--active {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 0;
-  justify-content: start;
+  padding: 5% 0;
+  margin-bottom: 5%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
 
 .main-active-col {
   max-width: 33%;
   margin-left: 4%;
   margin-right: -2%;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
 }
 
 .main-active-head {
@@ -111,9 +140,13 @@ footer {
 }
 
 .main-col__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .main-input {
@@ -125,7 +158,7 @@ footer {
 }
 
 .main-head {
-  white-space: nowrap;
+  width: 100%;
   font-size: 20px;
   line-height: 34px;
   color: #112985;
@@ -152,17 +185,28 @@ footer {
 .footer {
   margin-top: 5%;
   background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   min-height: 165px;
   width: 100%;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   width: 80%;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .footer-col {
@@ -192,8 +236,13 @@ footer {
 }
 
 .footer-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   width: 154.09px;
 }
 
@@ -206,7 +255,10 @@ footer {
     border: none;
   }
   .main-block {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 5% auto;
   }
   .main-input {
@@ -243,8 +295,13 @@ footer {
     text-align: center;
   }
   .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .footer-col {
     width: 100%;
